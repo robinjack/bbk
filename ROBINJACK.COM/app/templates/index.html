@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi!</h1>
+    {% for message in messages %}
+    <div><p>{{ message.message }}</p></div>
+    {% endfor %}
+
+    <h1>Please say whatever you want!</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.submission.label }}<br>
+            {{ form.submission() }}
+        </p>
+        <input type="submit" value="Go">
+    </form>
+{% endblock %}

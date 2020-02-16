@@ -1,0 +1,57 @@
+Possibly academic papers
+
+DDOS - spotting it - and how to carryr on with service  (look up some services that have been suggested)
+General recommendation for project ideas
+What related things have already been done?
+
+
+Natural language interpreter - grammar based approach to data analysis
+parsing create tokens 
+could potentially use a parser generator from queries lioke "what is the general level of rule of law in the EU"
+
+DSL - domain specific query language for the rule of law, with some data stuff underneath to get these disparate datasets in alignment, and potentially the option to extend the data with another institution
+
+
+
+
+possible options of extension:
+1. additional data sources
+2. visualisation
+3. extension of the API
+4. extension of the language (ignoring things like "the")
+
+Read up:
+1. Data homogenizations / data integration + standardized 
+2. DSL
+3. scholar.google.com 
+4. Look up data science issues
+
+Technology:
+	Language
+
+	Database?: relational database vs NoSQL vs SPARQL?
+	Web framework?:
+
+
+give me the sum of the voters in the uk where the party was labour, and plot how it changed over time
+
+
+PARTY, VOTERS
+labours, 10
+
+
+
+
+
+General points:
+1. Better to impress people
+2. Better to use existing 
+3. 
+
+API 
+
+data source - 
+
+future work: ((map the known categories to the corresponding columns of the data source))
+
+

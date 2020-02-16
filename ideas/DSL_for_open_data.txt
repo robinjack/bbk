@@ -1,0 +1,23 @@
+Perhaps a DSL for open daata?
+http://opendatatoolkit.worldbank.org/en/open-data-in-60-seconds.html
+http://okfnlabs.org/handbook/data/patterns/getting-data-from-world-bank/
+Getting data from the world bank
+
+https://datahelpdesk.worldbank.org/knowledgebase/articles/898599-indicator-api-queries
+
+You can download data from the world bank by using the below pattern
+
+"https://api.worldbank.org/v2/countries/all/indicators/[INDICATOR ID HERE]"
+
+An example can be found here:
+https://api.worldbank.org/v2/countries/all/indicators/EG.ELC.ACCS.RU.ZS
+
+You can then see a sample by running
+
+```curl https://api.worldbank.org/v2/countries/all/indicators/EG.ELC.ACCS.RU.ZS```
+
+You can see developer documentation here
+https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information
+
+
+

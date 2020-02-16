@@ -1,0 +1,53 @@
+DSLs
+Questions from Martin Fowler's book
+
+1. Do I create an internal or external DSL? I.e. one in a language, or make a new language?
+2. Need to consider separation of Semantic Model and DSL syntax - do I want to do this?
+3. What is the grammar I want to work with?
+4. Writing tests - Once I have the grammar, I can write a test suite. Tests should be broken down into testing the semantic model, testing the parser, and testing the scripts.
+5. Do I put the error handling in the parser or the semantic model? (semantic model more expressive, but can't identify line numbers as easily) One option is to handle errors in the semantic model, but trigger them in the parser - this separates the concerns
+
+
+
+
+Distinction between AST and Semantic model
+1. AST < representation of the hierarchy / relationship between things. However, it has no information about the quality of the relationship. For exaample, 5+5 could be 55 in some semantic models.
+
+
+
+
+What's an external DSL? Differennt language from the languageg it compiles to. I.e. this might involve coming up with your own syntax.
+
+This is separate from an internal DSL, which is valid in the general purpose language it is part of.
+
+the job of the parser is to populate the semantic model
+
+
+
+Elements of a DSL:
+1. DSL Text (comprised from a DSL grammar)
+2. Syntax Tree (also generated according to the rules from the grammar)
+3. Symbol table (so we can store data)
+
+
+
+Internal DSLs
+
+Rather than
+a = new Controller()
+a.setVariable(10)
+
+you can do a = controller.setvariaable(10).setfuel(10) -- all in one expressions
+
+These are called fluent expressions, and are a definng feature of internal DSLs
+
+Command/Query separation -- methods should be divided into commands and queries.
+A query is a method that returns a value but does nopt change the state. A command usually does not return a value, but does change state
+
+Fluent interfaces break this (as each method returns an updated object), and the names might make no sense in context, but you can create sentences with them, like the CSHARP testing framework below:
+hand.GetHandRank().Should().Be(HandRank.FullHouse);
+
+You can manage this difference by creating an expression builder, which has the task of taking a series of commands from a fluent interface, and building it into a sequence of command query API calls.
+
+The expression builder is a lot like a parser (i.e. we build a syntax tree, we use symbol tables aand we stikll populate a semantic model) but rather than parsing a stream of tokens, it parses a stream of function calls.
+

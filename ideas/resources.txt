@@ -1,0 +1,15 @@
+https://leafo.net/guides/dsl-in-lua.html
+
+http://radar.oreilly.com/2014/01/a-compelling-family-of-dsls-for-data-science.html
+
+https://github.com/sulxxy/DSL-for-Data-Analysis
+https://arxiv.org/pdf/1904.09818.pdf
+https://www.groundai.com/project/one-dsl-to-rule-them-all-ide-assisted-code-generation-for-agile-data-analysis/
+
+http://dsl-course.org/
+
+
+
+Domain Specific Languages - Martin Fowler
+
+Parser Generators for Python: https://tomassetti.me/parsing-in-python/#parserGenerators

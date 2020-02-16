@@ -30,5 +30,9 @@ Backend (more ambitious ideas):
 FIRST PROJECT
 LEARN FLASK + GET SOMETHING UP AND RUNNING ON ROBINJACK.COM
 
-What the fuck should I eat for dinner v2
+Initial design:
+1. Create a website where anyone can come to it and
+post words on it, and it will post them randomly (and it will only show the last 100 things that have been said)
+
+
 
