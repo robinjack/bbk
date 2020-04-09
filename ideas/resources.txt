@@ -13,3 +13,6 @@ http://dsl-course.org/
 Domain Specific Languages - Martin Fowler
 
 Parser Generators for Python: https://tomassetti.me/parsing-in-python/#parserGenerators
+
+
+https://tomassetti.me/what-are-good-books-on-best-practices-of-the-design-of-domain-specific-languages-dsl/

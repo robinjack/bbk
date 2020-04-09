@@ -29,7 +29,26 @@ EXTERNAL DSLS - Qs
 
 #CHOOSING BETWEEN EXTERNALL AND INTERNAL DSLS
 
+1. Learning curve
+- Internal - you're using a language you already know, whereas with external DSLs you have to learn about parsers, parser generators and grammars
+- however, internal DSLs often rely on very odd tricks in order to come up with something that's fluent
 
+2. Cost of building
+- building a DSL is a little bit complicated -and you have to ensure you separate the cost of building the model from building the syntax. THe main cost for internal DSLs is in the expression builder - whereas the main cost for external DSLs is in building the parser -- these map onto each other in a reasonable way
+
+3. Programmar familiarity
+- with an internal DSL, you can rely on tools like an IDE to debug, do syntax highlighting, autocompletion, and everything else. However, as soon as you move to an external DSL, you are one layer separate from this
+
+4. Communication with domain experts
+- internal DSLs don't have as much flexibility as an external DSL. This means that you may not be able to communicate to domain experts as easily. However, 
+
+5. Mixing in the host language
+- if you use an internal DSL, you can drop back into the standard language if you want more custom functionality. 
+- if you use an external DSL, you can't do this
+
+6. External DSLs have a strong expressiveness boundary- meaning they are great for limiting the usage to specific functionality. This means that external DSLs prevent mistakes snad 
+
+7. Risk of trying to do too much: internal DSLs can rely on the host language for functionality that does not fall within their remit, whereas sometimes the temptation is to try and recreate a GPL with a DSL
 
 GENERAL NOTES
 
